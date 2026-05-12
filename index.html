@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otter Labs</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #8b949e;
+      font-size: 1rem;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .project {
+      display: block;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .project:hover {
+      border-color: #58a6ff;
+      background: #161b22;
+    }
+
+    .project h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #58a6ff;
+    }
+
+    .project p {
+      margin-top: 0.25rem;
+      font-size: 0.875rem;
+      color: #8b949e;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #484f58;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Otter Labs</h1>
+    <p>Building developer tools.</p>
+  </header>
+
+  <div class="projects">
+    <a class="project" href="https://github.com/ottermq/ottermq">
+      <h2>OtterMQ</h2>
+      <p>Lightweight message queue for Go services.</p>
+    </a>
+    <a class="project" href="https://github.com/ottermq/otterboard">
+      <h2>OtterBoard</h2>
+      <p>Self-hosted project management.</p>
+    </a>
+    <a class="project" href="https://github.com/ottermq/goodiesdb">
+      <h2>GoodiesDB</h2>
+      <p>Caching and session layer.</p>
+    </a>
+    <a class="project" href="https://github.com/ottermq/concord">
+      <h2>Concord</h2>
+      <p>Real-time chat app built to explore WebSockets, JWT auth, and Redis pub/sub.</p>
+    </a>
+  </div>
+
+  <footer>otter-labs.com</footer>
+</body>
+</html>
